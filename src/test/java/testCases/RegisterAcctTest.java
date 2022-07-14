@@ -1,9 +1,9 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import libraries.Base;
 import pages.RegisterPage;
 
@@ -32,6 +32,7 @@ public class RegisterAcctTest extends Base {
 		registerPage.radiobtn_no.click();
 		registerPage.chkbox_policy.click();
 		registerPage.btn_continue.click();
+		Assert.assertEquals(registerPage.text_success.getText(), prop.getProperty("text"));
 		
 	}
 	

@@ -1,5 +1,6 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,6 +30,7 @@ public class LoginTest extends Base {
 		loginPage.txtbox_emailid.sendKeys(prop.getProperty("emailId"));
 		loginPage.txtbox_password.sendKeys(prop.getProperty("password"));
 		loginPage.btn_login.click();
+		Assert.assertEquals(driver.getCurrentUrl(), prop.getProperty("loginurl"));
 		
 	}
 	

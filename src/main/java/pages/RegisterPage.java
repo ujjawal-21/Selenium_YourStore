@@ -60,5 +60,8 @@ public class RegisterPage {
 	@FindBy(xpath="//a[normalize-space()='Continue']")
 	public WebElement btn_successcont;
 	
+	@FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']")
+	public WebElement text_success;
+	
 	
 }
