@@ -21,6 +21,9 @@ public class RegisterPage {
 	public
 	WebElement btn_register;
 	
+	@FindBy(xpath="//a[normalize-space()='Login']")
+	public WebElement btn_login;
+	
 	@FindBy(xpath="//input[@id='input-firstname']")
 	public
 	WebElement txtbox_firstname;
@@ -56,6 +59,9 @@ public class RegisterPage {
 	
 	@FindBy(xpath="//a[normalize-space()='Continue']")
 	public WebElement btn_successcont;
+	
+	@FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']")
+	public WebElement text_success;
 	
 	
 }
