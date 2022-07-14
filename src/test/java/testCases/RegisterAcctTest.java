@@ -25,10 +25,10 @@ public class RegisterAcctTest extends Base {
 		registerPage.btn_register.click();
 		registerPage.txtbox_firstname.sendKeys("Ujjawal");
 		registerPage.txtbox_lastname.sendKeys("Anand");
-		registerPage.txtbox_email.sendKeys("ujju@gmail.com");
-		registerPage.txtbox_telephone.sendKeys("123456789");
-		registerPage.txtbox_password.sendKeys("Ujjawal@123");
-		registerPage.txtbox_cnfrmpasswd.sendKeys("Ujjawal@123");
+		registerPage.txtbox_email.sendKeys(prop.getProperty("emailId"));
+		registerPage.txtbox_telephone.sendKeys("123456798");
+		registerPage.txtbox_password.sendKeys("password");
+		registerPage.txtbox_cnfrmpasswd.sendKeys("password");
 		registerPage.radiobtn_no.click();
 		registerPage.chkbox_policy.click();
 		registerPage.btn_continue.click();
