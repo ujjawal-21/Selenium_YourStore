@@ -24,7 +24,7 @@ public class Base {
 		FileInputStream fin;
 		try {
 			prop = new Properties();
-			fin = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/Other/Config.properties");
+			fin = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/other/config.properties");
 			try {
 				prop.load(fin);
 			} catch (FileNotFoundException e) {
