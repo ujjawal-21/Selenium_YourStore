@@ -20,6 +20,6 @@ public class HomePageTest extends Base {
 	
 	@Test
 	public void homePageElementsTest() {
-		
+		utils.clickEvent(driver, home);
 	}
 }
